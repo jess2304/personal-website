@@ -2,68 +2,61 @@
 /* ---------------------               Style sheet for the website            ------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+
 /*********************************************************************/
-body, html {
-    margin: 0;
+body{
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins',sans-serif;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
+    margin: 0;
 }
 
-.container {
-    display: flex;
-    height: 100%;
-}
 
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+
+}
 
 /*********************************************************************/
 
-
-/* For the fixed section : */
-
-.fixed-section {
-    width: 40%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    padding: 20px;
-    background-color: #f4f4f4; 
-}
-
-/* for profile division : */
-
-.profile-content {
-    display: flex;
-    align-items: flex-start;
-}
 
 .profile-photo {
-    width: 200px;
-    height: 200px; 
-    border-radius: 50%; 
-    margin-bottom: 20px;
+    width: 500px;
+    height: 500px; 
+    border-radius: 45%; 
 }
 
 
 /* for name and title division : */
 
 .name-title {
-    align-self: flex-start;
-    margin: 20px;
-    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .name-title h1 {
     font-weight: bold; 
-    font-size:30px;  
-    color: #2c3e50;
+    font-size:100px;  
+    color: #497199;
+    margin: 0;
 }
 
 .name-title .title {
-    font-size: 30px; 
+    font-size: 100px; 
     font-weight: bold; 
     color: #0b7738;
+    margin: 0;
 }
 
 
@@ -74,10 +67,12 @@ body, html {
     font-size: 16px;
 }
 
+
+
 .contact-info .coordinates{
     font-size: 24px;
     font-weight: bold;
-    color: #001429;
+    color: #868686;
 
 }
 
@@ -93,55 +88,19 @@ a:hover, a:focus {
 
 
 
-/*********************************************************************/
+/* For transition*/
 
-/* For the scroll section : */
-
-.scroll-section {
-    width: 60%;
-    margin-left: 45%;
-    overflow-y: auto;
-    height: 100%;
-    box-sizing: border-box;
-
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
-
-/* For the description of profile : */
-
-.description .pro-profile{
-    
-    color: #333;
-    font-size: 28px;
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform:translateX(0) ;
 }
-
-
-.description .bio {
-
-    color: #333;
-    background-color: #f8f8f8;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    margin: 10px 0;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-y: auto; 
-    height: auto; 
-}
-
-.description .bio:first-letter {
-    font-size: 150%;
-    color: #27ae60;
-    
-}
-
-.description .bio strong {
-    color: #2c3e50;
-    font-weight: bold;
-}
-
 
 /*********************************************************************/
