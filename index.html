@@ -16,64 +16,66 @@
 <body>
  <!--------------------------------------------------------------------------------------------------------------->
         <!-- Section that can't scroll down -->
-        <section class="hidden">
+        <section class="animated">
             <!-- import photo -->
             <img src="images/photo.jpg" alt="my_photo" class="profile-photo">
 
             <!-- title section -->
             <section class="name-title">
                 <h1>Jessem Ettaghouti</h1>
-                <h2 class="title">Data Scientist & Développeur </h2>
+                <h2 class="title">Data Scientist et Développeur </h2>
             </section>
         
         </section>
 
-            <!-- informations about contact -->
+        <!-- informations about contact -->
         <section class="hidden">
                 <h3 class="coordinates">Coordonnées</h3>
-                <p><i class="fa fa-envelope"></i> <strong>Email :</strong><a href="mailto:jessemtaghouti.prepa@gmail.com"> jessemtaghouti.prepa@gmail.com</a></p>
-                <p><i class="fa fa-phone"></i> <strong>Téléphone : </strong><a href="tel:+33671090148">+33 6 71 09 01 48</a></p>
-                <p><i class="fa fa-car"></i> <strong>Permis : B</strong></p>
-                <p><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn :</strong><a href="https://www.linkedin.com/in/jessem-ettaghouti-38142320a/"> https://www.linkedin.com/in/jessem-ettaghouti-38142320a/</a></p>
+                <p class="hidden"><i class="fa fa-envelope"></i> <strong>Email :</strong><a href="mailto:jessemtaghouti.prepa@gmail.com"> jessemtaghouti.prepa@gmail.com</a></p>
+                <p class="hidden"><i class="fa fa-phone"></i> <strong>Téléphone : </strong><a href="tel:+33671090148">+33 6 71 09 01 48</a></p>
+                <p class="hidden"><i class="fa fa-car"></i> <strong>Permis : B</strong></p>
+                <p class="hidden"><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn :</strong><a href="https://www.linkedin.com/in/jessem-ettaghouti-38142320a/"> https://www.linkedin.com/in/jessem-ettaghouti-38142320a/</a></p>
         </section>
         
-        <!--------------------------------------------------------------------------------------------------------------->
+    
 
 
-
-        <!--------------------------------------------------------------------------------------------------------------->
-        <!-- Section that scrolls down -->
-        <!-- Description -->
-
-
-            
-        <section class="hidden">
-            <h4 class="pro-profile">Profil professionnel</h4>
-            <p class="bio">
-                Récemment diplômé de l'ISIMA Clermont-INP, mon parcours m'a façonné en un ingénieur passionné de Data Science, avec une expertise croissante en DevOps, en Machine Learning et un amour pour le développement en Python.<br> <br> 
-                Je suis désireux de mettre à profit ma rigueur analytique et ma créativité technique dans un environnement où l'innovation est au cœur des projets.<br> <br> 
-                Mon approche holistique de la technologie, alliant une solide compréhension théorique à une application pratique, me permet de naviguer avec aisance à travers les complexités des données et de l'infrastructure. 
-            </p>
+        <!-- Professional profile -->   
+        <section class="pro-profile">
+            <h4>Profil professionnel</h4>
+            <div id="typewriter">
+                Récemment diplômé de l'ISIMA Clermont-INP, mon parcours m'a façonné en un ingénieur passionné de <br>
+                Data Science <br> 
+                avec une expertise croissante en DevOps <br>
+                en Machine Learning <br>
+                et un amour pour le développement en Python. <br>
+                Je suis désireux de mettre à profit ma rigueur analytique et ma créativité technique dans un environnement où l'innovation est au cœur des projets.<br>
+                Mon approche holistique de la technologie, alliant une solide compréhension théorique à une application pratique, me permet de naviguer avec aisance à travers les complexités des données et de l'infrastructure.<br>
+            </div>
         </section>
 
-        <section class="hidden">
-            <h2 class="section-title">Formations</h2>
+        <section class="formations">
+            <h2>Formations</h2>
             <section class="formations-container">
-                <section class="formation-item">
+                <div class="hidden">
                     <h3>Diplôme d'Ingénieur en Informatique et Data Science</h3>
                     <p>ISIMA Clermont-INP - 2020 à 2023</p>
-                    <img src="images/isima.jpg" alt="isima_photo" class="isima-photo">
-                </section>
-                <section class="formation-item">
+                    <div class="image-container">
+                        <img src="images/isima2.png" alt="isima_photo" class="isima-photo" /><img src="images/DataScience.png" alt="data_photo" class="data-photo"/>
+                    </div>  
+                </div>
+
+                <div class="hidden">
                     <h3>CPGE Mathématiques et Sciences Physiques</h3>
                     <p>IPEST La Marsa, Tunis - 2018 à 2020</p>
-                    <img src="images/ipest.jpg" alt="ipest_photo" class="ipest-photo">
-                </section>
-                <section class="formation-item">
-                    <h3>Baccalauréat en Mathématiques</h3>
-                    <p>Lycée Secondaire Tabarka, Tunisie - Mention Très Bien</p>
-                    <img src="images/lycee.jpg" alt="lycee_photo" class="lycee-photo">
-                </section>
+                    <img src="images/ipest_ccinp.png" alt="ipest_photo" class="ipest-photo">
+                </div>
+
+                <div class="hidden">
+                    <h3>Baccalauréat en Mathématiques, Mention Très Bien</h3>
+                    <p>Lycée Secondaire de Tabarka, Tunisie - 2017 à 2018 </p>
+                    <img src="images/lycee.png" alt="lycee_photo" class="lycee-photo">
+                </div>
             </section>
         </section>
 

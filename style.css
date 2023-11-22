@@ -14,6 +14,7 @@ body{
     font-family: 'Poppins',sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -21,7 +22,14 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 70vh;
+}
+
+div{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 40vh;
 
 }
 
@@ -60,21 +68,6 @@ section{
 }
 
 
-/* for contact info division : */
-
-.contact-info p, .bio {
-    margin: 20px 20px;
-    font-size: 16px;
-}
-
-
-
-.contact-info .coordinates{
-    font-size: 24px;
-    font-weight: bold;
-    color: #868686;
-
-}
 
 
 a {
@@ -92,15 +85,119 @@ a:hover, a:focus {
 
 .hidden{
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(10px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
+
+     
+    
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform:translateX(0) ;
-}
+
+
+
+
+
+
+
+
 
 /*********************************************************************/
+
+
+
+
+.animated {
+    opacity: 0;
+    transition: opacity 5s ease-out, transform 1s ease-out;
+}
+
+
+.slide-in {
+    transform: translateX(-100%);
+}
+
+
+.fade-in {
+    transform: translateY(50%);
+}
+
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+
+
+#typewriter {
+    font-size: 28px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+
+
+    color: #ffffff;
+    background-color: #101018;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 100px rgba(105, 3, 3, 0.877);
+    line-height: 1.6;
+    margin: 10px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+}
+
+
+
+/*********************************************************************/
+
+/* Specific Font sizes */
+.hidden .coordinates{
+    font-size: 72px;
+}
+
+.hidden .hidden{
+    font-size: 28px;
+}
+
+.pro-profile h4{
+    font-size: 72px;
+}
+
+.formations h2{
+    font-size: 72px;
+}
+
+.formations .formations-container{
+    font-size: 28px;
+}
+
+
+/*********************************************************************/
+/* For the photos */
+
+.ipest-photo {
+    scale: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    border-radius: 20%; 
+}
+
+
+
+
+.lycee-photo {
+    scale: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    border-radius: 20%; 
+}
+/*********************************************************************/
+
