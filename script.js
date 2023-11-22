@@ -38,7 +38,6 @@ function typeWriter(element, segments, segmentIndex, charIndex, callback) {
                 typeWriter(element, segments, segmentIndex, charIndex + 1, callback);
             }, 30);
         } else {
-            // Ajoutez un saut de ligne si ce n'est pas le dernier segment
             if (segmentIndex < segments.length - 1) {
                 element.innerHTML += '<br>';
             }
@@ -54,9 +53,8 @@ function typeWriter(element, segments, segmentIndex, charIndex, callback) {
 document.addEventListener('DOMContentLoaded', function() {
     var element = document.getElementById('typewriter');
     var text = element.innerHTML;
-    var segments = text.split('<br>'); // Découpez le texte en segments
-    element.innerHTML = ''; // Effacez le contenu initial
+    var segments = text.split('<br>'); 
+    element.innerHTML = ''; 
     typeWriter(element, segments, 0, 0, function() {
-        // Callback après la fin de l'animation
     });
 });
