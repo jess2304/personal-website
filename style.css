@@ -79,10 +79,6 @@ div{
     font-weight: bold; 
     color: #0b7738;
     margin: 0;
-
-   
-
-    
 }
 
 
@@ -106,9 +102,6 @@ a:hover, a:focus {
     filter: blur(10px);
     transform: translateX(-100%);
     transition: all 2s;
-
-     
-    
 }
 
 
