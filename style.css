@@ -188,6 +188,14 @@ a:hover, a:focus {
     font-size: 36px;
 }
 
+.competences h2{
+    font-size: 72px;
+}
+
+.competence-item h3{
+    font-size: 36px;
+}
+
 
 /*********************************************************************/
 /* For the photos */
@@ -361,4 +369,57 @@ a:hover, a:focus {
 .clickable-image {
     cursor: pointer;
 }
+
+
+
+
+/*********************************************************************************************/
+
+/* The skills part*/
+
+.competences-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.competence-item {
+    flex-basis: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #222121; 
+    font-size: 28px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition-delay: 0s;
+}
+
+.competence-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.competence-item h3 {
+    margin-top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .competence-item {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+.competence-item:nth-child(1).show { transition-delay: 0.3s; }
+.competence-item:nth-child(2).show { transition-delay: 0.6s; }
+.competence-item:nth-child(3).show { transition-delay: 0.9s; }
+.competence-item:nth-child(4).show { transition-delay: 1.2s; }
+
 
