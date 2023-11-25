@@ -8,6 +8,13 @@
 
 
 /*********************************************************************/
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 body{
     background-color: #131316;
     color: #ffffff;
@@ -286,3 +293,29 @@ a:hover, a:focus {
 
 
 /*********************************************************************************************/
+
+/* Add a go top button*/
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #824dd6;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+    cursor: pointer; 
+}
+
+.gotopbtn:hover {
+    background: #6231b1;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
