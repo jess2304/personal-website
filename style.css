@@ -385,7 +385,6 @@ a:hover, a:focus {
 
 .competence-item {
     flex-basis: 45%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
@@ -413,13 +412,25 @@ a:hover, a:focus {
     }
 }
 
+.competence-item:nth-child(1).show {
+    transition-delay: 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); 
+}
 
+.competence-item:nth-child(2).show {
+    transition-delay: 0.6s;
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.5); 
+}
 
+.competence-item:nth-child(3).show {
+    transition-delay: 0.9s;
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.5); 
+}
 
+.competence-item:nth-child(4).show {
+    transition-delay: 1.2s;
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.5); 
+}
 
-.competence-item:nth-child(1).show { transition-delay: 0.3s; }
-.competence-item:nth-child(2).show { transition-delay: 0.6s; }
-.competence-item:nth-child(3).show { transition-delay: 0.9s; }
-.competence-item:nth-child(4).show { transition-delay: 1.2s; }
 
 
