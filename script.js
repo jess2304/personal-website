@@ -9,11 +9,19 @@ document.querySelectorAll('.main-nav a').forEach(anchor => {
 
 
 
+//----------------------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    var navHeight = document.querySelector('.main-nav').offsetHeight;
 
 
+    var profilePhotoSection = document.getElementById('profile-photo-section');
+    profilePhotoSection.style.marginTop = navHeight + 'px';
+});
 
 
-
+//----------------------------------------------------------------------
 
 
 
