@@ -7,15 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>It's Jessem ! </title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    
     <script defer src="script.js"></script>
 
 
 </head>
 <body>
  <!--------------------------------------------------------------------------------------------------------------->
-        <!-- Section that can't scroll down -->
+        
+        <header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#coords">Coordonnées</a></li>
+                    <li><a href="#pro-pro">Profil et Parcours Professionnels</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#languages">Langues</a></li>
+                    <li><a href="#hobbies">Loisirs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+ 
+ 
+ 
+ 
+        <!-- Profile photo and title -->
         <section class="animated">
             <!-- import photo -->
             <img src="images/photo.jpg" alt="my_photo" class="profile-photo">
@@ -29,7 +51,7 @@
         </section>
 
         <!-- informations about contact -->
-        <section class="hidden">
+        <section class="hidden" id="coords">
                 <h3 class="coordinates">Coordonnées</h3>
                 <p class="hidden"><i class="fa fa-envelope"></i> <strong>Email :</strong><a href="mailto:jessemtaghouti.prepa@gmail.com"> jessemtaghouti.prepa@gmail.com</a></p>
                 <p class="hidden"><i class="fa fa-phone"></i> <strong>Téléphone : </strong><a href="tel:+33671090148">+33 6 71 09 01 48</a></p>
@@ -37,51 +59,172 @@
                 <p class="hidden"><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn :</strong><a href="https://www.linkedin.com/in/jessem-ettaghouti-38142320a/"> https://www.linkedin.com/in/jessem-ettaghouti-38142320a/</a></p>
         </section>
         
-    
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-
-        <!-- Professional profile -->   
-        <section class="pro-profile">
-            <h4>Profil professionnel</h4>
-            <div id="typewriter">
-                Récemment diplômé de l'ISIMA Clermont-INP, mon parcours m'a façonné en un ingénieur passionné de <br>
-                Data Science <br> 
-                avec une expertise croissante en DevOps <br>
-                en Machine Learning <br>
-                et un amour pour le développement en Python. <br>
-                Je suis désireux de mettre à profit ma rigueur analytique et ma créativité technique dans un environnement où l'innovation est au cœur des projets.<br>
-                Mon approche holistique de la technologie, alliant une solide compréhension théorique à une application pratique, me permet de naviguer avec aisance à travers les complexités des données et de l'infrastructure.<br>
+        <div class="pro-container" id="pro-pro">
+            
+            <!-- Professional profile -->   
+            <div class="pro-profile">
+                <h4>Profil Professionnel</h4>
+                <div id="typewriter">
+                    Récemment diplômé de l'ISIMA Clermont-INP, mon parcours m'a façonné en un ingénieur passionné de <br>
+                    Data Science <br> 
+                    avec une expertise croissante en DevOps <br>
+                    en Machine Learning <br>
+                    et un amour pour le développement en Python. <br>
+                    </div>
             </div>
-        </section>
 
-        <section class="formations">
+            <!-- Professional Cursus -->   
+            <div class="animated">
+                <h4>Parcours Professionnel</h4>
+                <div class="typewriter_0">
+                    <h5>Data Scientist</h5>
+                    <p>09/2022 – 09/2023<br>
+                    <a href="https://www.carool.tech/"><strong class="highlight">CaRool - Paris</strong></a> - Contrat de professionnalisation (12 mois)<br>
+                    Réalisation et amélioration des algorithmes pour l'analyse de la référence, l'usure, et la classification des pneumatiques, utilisant des techniques de Machine Learning, Big Data, Infrastructure as Code (IaC), et DevOps avec GitLab CI/CD.</p>
+                
+                    <h5>Data Analyst</h5>
+                    <p>04/2022 - 09/2022<br>
+                        <a href="https://limos.fr/"><strong class="highlight">LIMOS - Clermont Ferrand</strong></a> - Stage (5 mois)<br>
+                    Analyse et gestion des incertitudes pour des données liées au suivi de patients souffrant de douleurs chroniques, en utilisant des techniques de visualisation de données et d'apprentissage non supervisé avec Python, Pandas, Matplotlib, Numpy et Scikit-learn.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="formations" id="formations">
             <h2>Formations</h2>
             <section class="formations-container">
                 <div class="hidden">
                     <h3>Diplôme d'Ingénieur en Informatique et Data Science</h3>
                     <p>ISIMA Clermont-INP - 2020 à 2023</p>
                     <div class="image-container">
-                        <img src="images/isima2.png" alt="isima_photo" class="isima-photo" /><img src="images/DataScience.png" alt="data_photo" class="data-photo"/>
+                        <img src="images/isima2.png" alt="isima_photo" class="isima-photo clickable-image" id="isima-photo"/><img src="images/DataScience.png" alt="data_photo" class="data-photo"/>
+                        <!-- Hidden list for isima -->
+                        <div class="subject-list hidden" id="isima-subjects">
+                            <button class="close-btn">X</button>
+                        </div>
                     </div>  
                 </div>
 
                 <div class="hidden">
                     <h3>CPGE Mathématiques et Sciences Physiques</h3>
                     <p>IPEST La Marsa, Tunis - 2018 à 2020</p>
-                    <img src="images/ipest_ccinp.png" alt="ipest_photo" class="ipest-photo">
+                    <img src="images/ipest_ccinp.png" alt="ipest_photo" class="ipest-photo clickable-image" id="ipest-photo"/>
+                    <!-- Hidden list for ipest -->
+                    <div class="subject-list hidden" id="ipest-subjects">
+                        <button class="close-btn">X</button>
+                    </div>
                 </div>
 
                 <div class="hidden">
                     <h3>Baccalauréat en Mathématiques, Mention Très Bien</h3>
                     <p>Lycée Secondaire de Tabarka, Tunisie - 2017 à 2018 </p>
-                    <img src="images/lycee.png" alt="lycee_photo" class="lycee-photo">
+                    <img src="images/lycee.png" alt="lycee_photo" class="lycee-photo clickable-image" id="lycee-photo"/>
+                    <!-- Hidden list for Bac -->
+                    <div class="subject-list hidden" id="lycee-subjects">
+                        <button class="close-btn">X</button>
+                    </div>
                 </div>
             </section>
         </section>
 
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- The skills !!!--> 
+        <section class="competences" id="competences">
+            <h2>Compétences</h2>
+            <div class="competences-container">
+                <div class="competence-item">
+                    <h3>Langages de Programmation</h3>
+                    <p>Python, C, C++, Matlab, Java</p>
+                </div>
+                <div class="competence-item">
+                    <h3>Technologies de Bases de Données</h3>
+                    <p>SQL, gestion de grandes bases de données, Big Data AWS</p>
+                </div>
+                <div class="competence-item">
+                    <h3>Infrastructures et DevOps</h3>
+                    <p>Terraform, GitLab CI/CD</p>
+                </div>
+                <div class="competence-item">
+                    <h3>Machine Learning et Deep Learning</h3>
+                    <p>Scikit-Learn, Keras</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Projects section -->
+        <section class="main-container" id="projects">
+            
+            <div class="projects-container">
+                <h2>Projets</h2>
+                
+                <div class="project-item animated">
+                    <h3>Génération de maillages en 2D (120 heures)</h3>
+                    <p> Développer un générateur de maillages 2D en Matlab et Python,
+                        en utilisant des connaissances en éléments finis</p>
+                    <a href="https://github.com/jess2304/KMG2D-Python"><strong>Voir sur GitHub</strong></a>
+                </div>
+
+                <div class="project-item animated">
+                    <h3>Challenge Deep Learning de QuickDraw Basique (120 heures)</h3>
+                    <p> Le but est de créer un modèle Deep Learning avec Keras permettant de classifier des images en 5 classes.</p>
+                    <a href="https://github.com/jess2304/Challenge-QuickDraw-Basique"><strong>Voir sur GitHub</strong></a>
+                </div>
+
+                <div class="project-item animated">
+                    <h3>Réalisation du jeu de cartes Pablo (120 heures)</h3>
+                    <p> Développer un modèle IA avec du Reinforcement Learning permettant de jouer contre un humain au jeu Pablo.</p>
+                    <a href="https://github.com/jess2304/pablo-game-ai"><strong>Voir sur GitHub</strong></a>
+                </div>
+
+                <div class="project-item animated">
+                    <h3>Réalisation du site web personnel (60 heures) </h3>
+                    <p> Développer un site web personnel présentant un portfolio des compétences permettant de mieux connaître Jessem Ettaghouti.</p>
+                    <a href="https://github.com/jess2304/personal-website"><strong>Voir sur GitHub</strong></a>
+                </div>
+
+                <div class="project-item animated">
+                    <h3>Réalisation du site web et de la base de données ISIMA (60 heures) </h3>
+                    <p> Concevoir un site web visualisant une base de données d'ISIMA, en utilisant HTML, CSS, PHP, MySQL, et le serveur MAMP </p>
+                </div>
+            </div>
+        
+            <div class="languages-container" id="languages">
+                <h2>Langues</h2>
+                <div class="language-item animated">Arabe - Langue maternelle</div>
+                <div class="language-item animated">Français - Courant</div>
+                <div class="language-item animated">Anglais - Intermédiaire supérieur B2 (TOEIC réussi)</div>
+                <div class="language-item animated">Allemand - Notions</div>
+            </div>
+        </section>
+
+        <section class="hobbies-container" id="hobbies">
+            <h2>Loisirs</h2>
+            <div class="hobby-item">
+                <img src="images/tennis.jpg" alt="Tennis" class="hobby-icon">
+                <p>Tennis</p>
+            </div>
+            <div class="hobby-item">
+                <img src="images/muscul.jpg" alt="Musculation" class="hobby-icon">
+                <p>Musculation</p>
+            </div>
+        </section>
+        
+        
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
         <footer>
-            
+            <div class="footer-content">
+                <p>&copy; 2023 Jessem Ettaghouti. Tous droits réservés.</p>
+                <p>Contact : <a href="mailto:jessemtaghouti.prepa@gmail.com">jessemtaghouti.prepa@gmail.com</a></p>
+            </div>
+
+            <a class="gotopbtn" href="#"> <i class = "fas fa-arrow-up"></i> </a>
         </footer>
         
         <!--------- ------------------------------------------------------------------------------------------------------>
