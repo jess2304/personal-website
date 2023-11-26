@@ -18,6 +18,25 @@
 </head>
 <body>
  <!--------------------------------------------------------------------------------------------------------------->
+        
+        <header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#coords">Coordonnées</a></li>
+                    <li><a href="#pro-pro">Profil et Parcours Professionnels</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#languages">Langues</a></li>
+                    <li><a href="#hobbies">Loisirs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+ 
+ 
+ 
+ 
         <!-- Profile photo and title -->
         <section class="animated">
             <!-- import photo -->
@@ -32,7 +51,7 @@
         </section>
 
         <!-- informations about contact -->
-        <section class="hidden">
+        <section class="hidden" id="coords">
                 <h3 class="coordinates">Coordonnées</h3>
                 <p class="hidden"><i class="fa fa-envelope"></i> <strong>Email :</strong><a href="mailto:jessemtaghouti.prepa@gmail.com"> jessemtaghouti.prepa@gmail.com</a></p>
                 <p class="hidden"><i class="fa fa-phone"></i> <strong>Téléphone : </strong><a href="tel:+33671090148">+33 6 71 09 01 48</a></p>
@@ -42,7 +61,7 @@
         
         <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-        <div class="pro-container">
+        <div class="pro-container" id="pro-pro">
             
             <!-- Professional profile -->   
             <div class="pro-profile">
@@ -76,17 +95,17 @@
         <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-        <section class="formations">
+        <section class="formations" id="formations">
             <h2>Formations</h2>
             <section class="formations-container">
                 <div class="hidden">
                     <h3>Diplôme d'Ingénieur en Informatique et Data Science</h3>
                     <p>ISIMA Clermont-INP - 2020 à 2023</p>
                     <div class="image-container">
-                        <img src="images/isima2.png" alt="isima_photo" class="isima-photo" id="isima-photo"/><img src="images/DataScience.png" alt="data_photo" class="data-photo"/>
+                        <img src="images/isima2.png" alt="isima_photo" class="isima-photo clickable-image" id="isima-photo"/><img src="images/DataScience.png" alt="data_photo" class="data-photo"/>
                         <!-- Hidden list for isima -->
                         <div class="subject-list hidden" id="isima-subjects">
-                            
+                            <button class="close-btn">X</button>
                         </div>
                     </div>  
                 </div>
@@ -94,20 +113,20 @@
                 <div class="hidden">
                     <h3>CPGE Mathématiques et Sciences Physiques</h3>
                     <p>IPEST La Marsa, Tunis - 2018 à 2020</p>
-                    <img src="images/ipest_ccinp.png" alt="ipest_photo" class="ipest-photo" id="ipest-photo"/>
+                    <img src="images/ipest_ccinp.png" alt="ipest_photo" class="ipest-photo clickable-image" id="ipest-photo"/>
                     <!-- Hidden list for ipest -->
                     <div class="subject-list hidden" id="ipest-subjects">
-                        
+                        <button class="close-btn">X</button>
                     </div>
                 </div>
 
                 <div class="hidden">
                     <h3>Baccalauréat en Mathématiques, Mention Très Bien</h3>
                     <p>Lycée Secondaire de Tabarka, Tunisie - 2017 à 2018 </p>
-                    <img src="images/lycee.png" alt="lycee_photo" class="lycee-photo " id="lycee-photo"/>
+                    <img src="images/lycee.png" alt="lycee_photo" class="lycee-photo clickable-image" id="lycee-photo"/>
                     <!-- Hidden list for Bac -->
                     <div class="subject-list hidden" id="lycee-subjects">
-                        
+                        <button class="close-btn">X</button>
                     </div>
                 </div>
             </section>
@@ -115,7 +134,7 @@
 
         <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         <!-- The skills !!!--> 
-        <section class="competences">
+        <section class="competences" id="competences">
             <h2>Compétences</h2>
             <div class="competences-container">
                 <div class="competence-item">
@@ -139,7 +158,7 @@
         
         <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         <!-- Projects section -->
-        <section class="main-container">
+        <section class="main-container" id="projects">
             
             <div class="projects-container">
                 <h2>Projets</h2>
@@ -175,7 +194,7 @@
                 </div>
             </div>
         
-            <div class="languages-container">
+            <div class="languages-container" id="languages">
                 <h2>Langues</h2>
                 <div class="language-item animated">Arabe - Langue maternelle</div>
                 <div class="language-item animated">Français - Courant</div>
@@ -184,7 +203,7 @@
             </div>
         </section>
 
-        <section class="hobbies-container">
+        <section class="hobbies-container" id="hobbies">
             <h2>Loisirs</h2>
             <div class="hobby-item">
                 <img src="images/tennis.jpg" alt="Tennis" class="hobby-icon">
@@ -200,6 +219,11 @@
         <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
         <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Jessem Ettaghouti. Tous droits réservés.</p>
+                <p>Contact : <a href="mailto:jessemtaghouti.prepa@gmail.com">jessemtaghouti.prepa@gmail.com</a></p>
+            </div>
+
             <a class="gotopbtn" href="#"> <i class = "fas fa-arrow-up"></i> </a>
         </footer>
         

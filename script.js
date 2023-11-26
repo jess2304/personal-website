@@ -1,3 +1,24 @@
+document.querySelectorAll('.main-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Intersection observer
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -83,34 +104,41 @@ document.addEventListener('DOMContentLoaded', function() {
         "- Stage et Alternance (2ème année et 3ème année)"
       ];
     var ipestSubjects = [
-        "Mathématiques (Analyse et Algèbre)",
-        "Sciences Physiques",
-        "Sciences de l'ingénieur (SI)",
-        "Informatique",
-        "Philosophie en Français",
-        "Anglais"
+        "- Mathématiques (Analyse et Algèbre)",
+        "- Sciences Physiques",
+        "- Sciences de l'ingénieur (SI)",
+        "- Informatique",
+        "- Philosophie en Français",
+        "- Anglais"
     ];
     var lyceeSubjects = [
-        "Mathématiques (Analyse, Algèbre, Géométrie)",
-        "Sciences Physiques",
-        "Sciences humaines",
-        "Français",
-        "Anglais",
-        "Arabe",
-        "Philosophie",
-        "Informatique",
-        "Education Physique"
+        "- Mathématiques (Analyse, Algèbre, Géométrie)",
+        "- Sciences Physiques",
+        "- Sciences humaines",
+        "- Français",
+        "- Anglais",
+        "- Arabe",
+        "- Philosophie",
+        "- Informatique",
+        "- Education Physique"
     ];
 
 
     function showSubjects(subjects, containerId) {
         var container = document.getElementById(containerId);
         container.style.position = 'absolute';
-        container.innerHTML = subjects.map(function(subject) {
-            return '<div class="subject">' + subject + '</div>';
-        }).join('');
+        container.innerHTML = '<button class="close-btn">X</button>' + 
+            subjects.map(function(subject) {
+                return '<div class="subject">' + subject + '</div>';
+            }).join('');
+        
+        container.querySelector('.close-btn').addEventListener('click', function() {
+            container.classList.remove('show');
+        });
+    
         container.classList.toggle('show');
     }
+    
 
 
     document.getElementById('isima-photo').addEventListener('click', function() {
@@ -125,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
         showSubjects(lyceeSubjects, 'lycee-subjects');
     });
 });
+
+
 
 
 
