@@ -196,7 +196,19 @@ a:hover, a:focus {
     font-size: 36px;
 }
 
+.projects-container h2{
+    font-size: 72px;
+    border-bottom: 2px solid rgb(28, 8, 139);
+}
 
+.project-item h3{
+    font-size: 36px;
+}
+
+.languages-container h2{
+    font-size: 72px;
+    border-bottom: 2px solid rgb(28, 8, 139);
+}
 /*********************************************************************/
 /* For the photos */
 
@@ -434,3 +446,125 @@ a:hover, a:focus {
 
 
 
+/*****************************************************************************************/
+
+
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.projects-container, .languages-container {
+    flex-basis: 45%; 
+    margin: 10px;
+}
+
+.project-item {
+    background-color: #3f0101; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    border-left: 5px solid #460606; 
+    position: relative; 
+    font-size: 24px;
+}
+
+.project-item.show {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+}
+
+.project-item:hover {
+    box-shadow: 0 25px 50px rgba(0, 4, 255, 0.75);
+}
+
+
+
+
+
+.project-item a {
+    color: #ff8a2b;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.language-item {
+    background-color: #0a013f; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    border-left: 5px solid #100646; 
+    position: relative; 
+    font-size: 24px;
+}
+
+
+
+.language-item.show {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+}
+
+.language-item:hover {
+    box-shadow: 0 25px 50px rgba(7, 52, 148, 0.75);
+    background-color: rgb(49, 40, 163); 
+}
+
+
+
+/****************************************************************/
+
+
+.hobbies-container {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hobbies-container h2 {
+    font-size: 72px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hobby-item p{
+    font-size: 36px;
+    color: orange;
+}
+
+.hobby-icon {
+    width:100px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.hobby-item:hover {
+    transform: scale(3);
+    transition: transform 0.3s ease-in-out;
+}

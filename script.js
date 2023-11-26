@@ -148,3 +148,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const items = document.querySelectorAll('.competence-item');
     items.forEach((item) => observer.observe(item));
 });
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const animatedItems = document.querySelectorAll('.animated');
+    animatedItems.forEach((item) => observer.observe(item));
+});
