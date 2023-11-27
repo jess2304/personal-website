@@ -10,15 +10,15 @@ document.querySelectorAll('.main-nav a').forEach(anchor => {
 
 
 //----------------------------------------------------------------------
-
-document.addEventListener('DOMContentLoaded', function() {
-    
+function adjustProfilePhotoMargin() {
     var navHeight = document.querySelector('.main-nav').offsetHeight;
+    var profilePhoto = document.querySelector('.profile-photo');
+    profilePhoto.style.marginTop = navHeight + 'px';
+}
 
+document.addEventListener('DOMContentLoaded', adjustProfilePhotoMargin);
+window.addEventListener('resize', adjustProfilePhotoMargin);
 
-    var profilePhotoSection = document.getElementById('profile-photo-section');
-    profilePhotoSection.style.marginTop = navHeight + 'px';
-});
 
 
 //----------------------------------------------------------------------
