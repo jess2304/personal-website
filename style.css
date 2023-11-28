@@ -57,7 +57,6 @@ body{
 
 .main-nav a:hover {
     background-color: rgb(32, 60, 100);
-    border-style:groove;
 }
 
 
@@ -848,6 +847,11 @@ footer {
         width: 80vw;
     }
 
+    .close-btn {
+        font-size: 5vw;
+    }
+    
+
     .competence-item {
         padding: 3.5vw;
         font-size: 3vw;
@@ -1050,9 +1054,13 @@ footer {
         width: 80vw;
     }
 
+    .close-btn {
+        font-size: 6vw;
+    }
+
     .competence-item {
         padding: 3.5vw;
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
 
