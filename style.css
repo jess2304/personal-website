@@ -26,11 +26,11 @@ body{
 
 
 .main-nav {
-    background-color: #333;
+    background-color: rgb(99, 133, 184);
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 0.69vw 0;
+    padding: 1vw 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,15 +48,16 @@ body{
 }
 
 .main-nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 0.69vh 1.04vw;
+    padding: 1vh 1.04vw;
     font-size: 1.39vw;
     font-weight: bold;
 }
 
 .main-nav a:hover {
-    background-color: #555;
+    background-color: rgb(32, 60, 100);
+    border-style:groove;
 }
 
 
@@ -696,7 +697,7 @@ a:hover, a:focus {
 /*********************************************************************************************************************************************/
 
 footer {
-    background-color: #202020;
+    background-color: rgb(11, 32, 65);
     color: white;
     display: flex;
     flex-direction: column;
@@ -711,25 +712,6 @@ footer {
     margin: 0.5v 0; 
 
 }
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 50%;
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 1vw; 
-    font-size: 3vw; 
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #4CAF50;
-}
-
 
 
 
@@ -787,8 +769,12 @@ footer {
         display: flex; 
     }
 
+    .main-nav a{
+        font-size: 2.39vw;
+    }
+
     .main-nav a:hover {
-        background-color: #440404;
+        background-color: rgb(32, 60, 100);
     }
 
 
@@ -902,7 +888,6 @@ footer {
 
     
     footer {
-        background-color: #202020;
         color: white;
         display: flex;
         flex-direction: column;
@@ -917,23 +902,23 @@ footer {
         margin: 0.5v 0; 
     
     }
-    
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        width: 50%;
-    }
-    
-    .social-icons a {
+
+    .gotopbtn{
+        position: fixed;
+        width: 5vw;
+        height: 5vw;
+        background: #824dd6;
+        bottom: 2.78vw;
+        right: 3.47vw;
+        border-radius: 50%;
+        box-shadow: 0 0.28vw 0.56vw 0 rgba(0, 0, 0, 0.2); 
+        text-decoration: none;
+        text-align: center;
+        line-height: 5vw;
         color: white;
-        margin: 0 1vw; 
-        font-size: 4vw; 
-        transition: color 0.3s;
-    }
-    
-    .social-icons a:hover {
-        color: #4CAF50;
+        font-size: 4vw;
+        transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+        cursor: pointer; 
     }
 }
 
@@ -963,12 +948,16 @@ footer {
         width: 100%;
     }
 
+    .main-nav a{
+        font-size: 2.39vw;
+    }
+
     .main-nav ul.active {
         display: flex; 
     }
 
     .main-nav a:hover {
-        background-color: #440404;
+        background-color: rgb(32, 60, 100);
     }
 
 
@@ -1098,7 +1087,6 @@ footer {
 
     
     footer {
-        background-color: #202020;
         color: white;
         display: flex;
         flex-direction: column;
@@ -1113,22 +1101,22 @@ footer {
         margin: 0.5v 0; 
     
     }
-    
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        width: 50%;
-    }
-    
-    .social-icons a {
+
+    .gotopbtn{
+        position: fixed;
+        width: 5vw;
+        height: 5vw;
+        background: #824dd6;
+        bottom: 2.78vw;
+        right: 3.47vw;
+        border-radius: 50%;
+        box-shadow: 0 0.28vw 0.56vw 0 rgba(0, 0, 0, 0.2); 
+        text-decoration: none;
+        text-align: center;
+        line-height: 5vw;
         color: white;
-        margin: 0 1vw; 
-        font-size: 4vw; 
-        transition: color 0.3s;
-    }
-    
-    .social-icons a:hover {
-        color: #4CAF50;
+        font-size: 4vw;
+        transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
+        cursor: pointer; 
     }
 }
