@@ -24,17 +24,18 @@ body{
 }
 
 
+
 .main-nav {
     background-color: #333;
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 0.69vw 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 30px;
+    height: auto;
 }
 
 .main-nav ul {
@@ -49,8 +50,8 @@ body{
 .main-nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 20px;
+    padding: 0.69vh 1.04vw;
+    font-size: 1.39vw;
     font-weight: bold;
 }
 
@@ -66,8 +67,9 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 70vh;
+    min-height: 60vh;
 }
+
 
 div{
     display: grid;
@@ -81,10 +83,9 @@ div{
 
 
 .profile-photo {
-    width: 500px;
-    height: 500px; 
+    width: 34.72vw;
+    height: 34.72vw; 
     border-radius: 45%;
-
 }
 
 
@@ -103,7 +104,7 @@ div{
 
 .name-title h1 {
     font-weight: bold; 
-    font-size:100px;  
+    font-size:8vw;  
     color: #497199;
     margin: 0;
 
@@ -120,7 +121,7 @@ div{
 
 
 .name-title .title {
-    font-size: 82px; 
+    font-size: 6vw; 
     font-weight: bold; 
     color: #0b7738;
     margin: 0;
@@ -144,7 +145,7 @@ a:hover, a:focus {
 
 .hidden{
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(0.69vw);
     transform: translateX(-100%);
     transition: all 2s;
 }
@@ -166,7 +167,8 @@ a:hover, a:focus {
 .animated {
     opacity: 0;
     transition: opacity 3s ease-out, transform 1s ease-out;
-    margin-top: 60px;
+    margin-top: 8.48vh;
+    margin-bottom: 0.02vh;
 }
 
 
@@ -193,66 +195,86 @@ a:hover, a:focus {
 
 /* Specific Font sizes */
 .hidden .coordinates{
-    font-size: 72px;
+    font-size: 5vw;
 }
 
 .hidden .hidden{
-    font-size: 28px;
+    font-size: 1.94vw;
 }
 
 .pro-profile h4{
     text-align: center; 
-    font-size: 72px;
+    font-size: 5vw;
 }
 .pro-profile h4{
     text-align: center; 
-    font-size: 72px;
+    font-size: 5vw;
 }
 
 .animated h4{
     text-align: center; 
-    font-size: 72px;
+    font-size: 5vw;
 }
 
 .formations h2{
     text-align: center; 
-    font-size: 72px;
+    font-size: 5vw;
+}
+
+
+.formations{
+    margin-top: 20vh;
 }
 
 .formations .formations-container{
-    font-size: 28px;
+    font-size: 1.94vw;
 }
 
 .typewriter_0 h5{
-    font-size: 36px;
+    font-size: 2.5vw;
 }
 
 .competences h2{
-    font-size: 72px;
+    font-size: 5vw;
 }
 
 .competence-item h3{
-    font-size: 36px;
+    font-size: 2.5vw;
 }
 
 .projects-container h2{
-    font-size: 72px;
-    border-bottom: 2px solid rgb(28, 8, 139);
+    font-size: 5vw;
+    border-bottom: 0.14vw solid rgb(28, 8, 139);
 }
 
 .project-item h3{
-    font-size: 36px;
+    font-size: 2.5vw;
 }
 
 .languages-container h2{
-    font-size: 72px;
-    border-bottom: 2px solid rgb(28, 8, 139);
+    font-size: 5vw;
+    border-bottom: 0.14vw solid rgb(28, 8, 139);
 }
 /*********************************************************************/
 /* For the photos */
 
+
+
+.isima-photo {
+    width: 62.50vw;
+    height: auto;
+    display: flex;
+}
+
+.data-photo {
+    width: 62.50vw;
+    height: auto;
+    display: flex;
+}
+
 .ipest-photo {
-    scale: 1;
+    width: 62.50vw;
+    height: auto;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -263,7 +285,8 @@ a:hover, a:focus {
 
 
 .lycee-photo {
-    scale: 1;
+    width: 62.50vw;
+    height: auto;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -280,26 +303,27 @@ a:hover, a:focus {
     display: flex;
     justify-content: space-around;
     align-items: start;
+    margin-top: 20vh;
 }
 
 
 .pro-profile {
     flex: 1; 
-    margin: 0 0px; 
-    max-width: 400px; 
+    margin: 0 0vw; 
+    max-width: 27.78vw; 
 }
 
 
 .pro-container .animated {
     flex: 1; 
-    margin: 0 40px;
-    max-width: 800px; 
+    margin: 0 2.778vw;
+    max-width: 55.56vw; 
 }
 
 
 
 #typewriter {
-    font-size: 28px;
+    font-size: 1.94vw;
     text-align: center; 
     display: flex;
     flex-direction: column; 
@@ -308,12 +332,12 @@ a:hover, a:focus {
 
     color: #ffffff;
     background-color: #101018;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 100px rgba(105, 3, 3, 0.877);
+    padding: 0.69vw;
+    border-radius: 0.5556vw;
+    box-shadow: 0.69vw 0.69vw 6.94vw rgba(105, 3, 3, 0.877);
     line-height: 1.6;
-    margin: 10px 0;
-    max-width: 400px;
+    margin: 0.69vw 0;
+    max-width: 27.78vw;
     margin-left: auto;
     margin-right: auto;
     height: auto; 
@@ -323,7 +347,7 @@ a:hover, a:focus {
 
 
 .typewriter_0 {
-    font-size: 28px;
+    font-size: 1.94vw;
     text-align: center; 
     display: flex;
     flex-direction: column; 
@@ -332,12 +356,12 @@ a:hover, a:focus {
 
     color: #ffffff;
     background-color: #101018;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 100px rgba(5, 3, 105, 0.877);
+    padding: 0.69vw;
+    border-radius: 0.5556vw;
+    box-shadow: 0.69vw 0.69vw 6.94vw rgba(5, 3, 105, 0.877);
     line-height: 1.6;
-    margin: 10px 0;
-    max-width: 800px;
+    margin: 0.69vw 0;
+    max-width: 55.56vw;
     margin-left: auto;
     margin-right: auto;
     height: auto; 
@@ -357,26 +381,26 @@ a:hover, a:focus {
 
 .gotopbtn{
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 3.47vw;
+    height: 3.47vw;
     background: #824dd6;
-    bottom: 40px;
-    right: 50px;
+    bottom: 2.78vw;
+    right: 3.47vw;
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0.28vw 0.56vw 0 rgba(0, 0, 0, 0.2); 
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
+    line-height: 3.47vw;
     color: white;
-    font-size: 22px;
+    font-size: 1.53vw;
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
     cursor: pointer; 
 }
 
 .gotopbtn:hover {
     background: #6231b1;
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
+    box-shadow: 0 0.42vw 0.83vw 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.35vw);
 }
 
 
@@ -407,10 +431,10 @@ a:hover, a:focus {
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0.35vm 1.04vw rgba(0,0,0,0.3);
     transition: all 0.3s ease, opacity 0.5s, transform 0.5s;
-    max-height: 200px; 
-    max-width: 500px;
+    max-height: 13.89vw; 
+    max-width: 34.72vw;
     left:0;
   
 }
@@ -424,11 +448,11 @@ a:hover, a:focus {
 }
 
 .subject-list .subject {
-    padding: 2px 2px; 
-    font-size: 24px; 
-    margin-bottom: 0px; 
+    padding: 0.14vw 0.14vw; 
+    font-size: 1.67vw; 
+    margin-bottom: 0vw; 
     line-height: 1.6;
-    border-bottom: 1px solid #444;
+    border-bottom: 0.07vw solid #444;
 }
 
 .clickable-image:hover {
@@ -438,12 +462,12 @@ a:hover, a:focus {
 
 .close-btn {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 0.35vw;
+    right: 0.69vw;
     border: none;
     background: transparent;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.39vw;
     cursor: pointer;
 }
 
@@ -451,6 +475,11 @@ a:hover, a:focus {
 /*********************************************************************************************/
 
 /* The skills part*/
+
+.competences{
+    margin-top: 20vh;
+}
+
 
 .competences-container {
     display: flex;
@@ -460,13 +489,13 @@ a:hover, a:focus {
 
 .competence-item {
     flex-basis: 45%;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
+    margin: 0.69vw;
+    padding: 1.39vw;
+    border-radius: 0.35vw;
     background-color: #222121; 
-    font-size: 28px;
+    font-size: 1.94vw;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.39vw);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     transition-delay: 0s;
 }
@@ -480,31 +509,32 @@ a:hover, a:focus {
     margin-top: 0;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-    .competence-item {
-        flex-basis: 100%;
-    }
-}
+
 
 .competence-item:nth-child(1).show {
     transition-delay: 0.3s;
-    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); 
+    box-shadow: 0 0.69vw 1.39vw rgba(0, 123, 255, 0.5); 
 }
 
 .competence-item:nth-child(2).show {
     transition-delay: 0.6s;
-    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.5); 
+    box-shadow: 0 0.69vw 1.39vw rgba(40, 167, 69, 0.5); 
 }
 
 .competence-item:nth-child(3).show {
     transition-delay: 0.9s;
-    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.5); 
+    box-shadow: 0 0.69vw 1.39vw rgba(255, 193, 7, 0.5); 
 }
 
 .competence-item:nth-child(4).show {
     transition-delay: 1.2s;
-    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.5); 
+    box-shadow: 0 0.69vw 1.39vw rgba(220, 53, 69, 0.5); 
+}
+
+
+.competence-item:nth-child(5).show {
+    transition-delay: 1.2s;
+    box-shadow: 0 0.69vw 1.39vw rgba(185, 33, 231, 0.5); 
 }
 
 
@@ -517,36 +547,42 @@ a:hover, a:focus {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 1.39vw 0;
+    margin-top: 20vh;
+    align-items: flex-start;
+
+
 }
 
 .projects-container, .languages-container {
-    flex-basis: 45%; 
-    margin: 10px;
+    flex: 1;
+    max-width: 48%; 
+    margin: 0 1vw;
+
 }
 
 .project-item {
     background-color: #3f0101; 
-    padding: 20px;
-    border-radius: 10px; 
-    margin-bottom: 20px;
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+    padding: 1.39vw;
+    border-radius: 0.69vw; 
+    margin-bottom: 1.39vw;
+    box-shadow: 0 3.47vw 6.94vw rgba(0, 0, 0, 0);
     transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
     opacity: 0;
-    transform: translateY(20px);
-    border-left: 5px solid #460606; 
+    transform: translateY(1.39vw);
+    border-left: 0.35vw solid #460606; 
     position: relative; 
-    font-size: 24px;
+    font-size: 1.67vw;
 }
 
 .project-item.show {
     opacity: 1;
     transform: translateY(0);
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+    box-shadow: 0 3.47vw 6.94vw rgba(0, 0, 0, 0);
 }
 
 .project-item:hover {
-    box-shadow: 0 25px 50px rgba(0, 4, 255, 0.75);
+    box-shadow: 0 1.74vw 3.47vw rgba(0, 4, 255, 0.75);
 }
 
 
@@ -556,7 +592,7 @@ a:hover, a:focus {
 .project-item a {
     color: #ff8a2b;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 1.94vw;
 }
 
 .project-item a:hover {
@@ -565,16 +601,16 @@ a:hover, a:focus {
 
 .language-item {
     background-color: #0a013f; 
-    padding: 20px;
-    border-radius: 10px; 
-    margin-bottom: 20px;
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+    padding: 1.39vw;
+    border-radius: 0.69vw; 
+    margin-bottom: 1.39vw;
+    box-shadow: 0 3.47vw 6.94vw rgba(0, 0, 0, 0);
     transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
     opacity: 0;
-    transform: translateY(20px);
-    border-left: 5px solid #100646; 
+    transform: translateY(1.39vw);
+    border-left: 0.35vw solid #100646; 
     position: relative; 
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 
@@ -582,12 +618,30 @@ a:hover, a:focus {
 .language-item.show {
     opacity: 1;
     transform: translateY(0);
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0);
+    box-shadow: 0 3.47vw 6.94vw rgba(0, 0, 0, 0);
 }
 
 .language-item:hover {
-    box-shadow: 0 25px 50px rgba(7, 52, 148, 0.75);
+    box-shadow: 0 1.74vw 3.47vw rgba(7, 52, 148, 0.75);
     background-color: rgb(49, 40, 163); 
+}
+
+
+/******************************************************************/
+
+#certifications {
+    
+    padding: 1.39vw;
+    text-align: center;
+}
+
+#certifications h2{
+    font-size: 5vw;
+}
+
+.certifications-list {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;
 }
 
 
@@ -596,39 +650,39 @@ a:hover, a:focus {
 
 
 .hobbies-container {
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.39vw;
+    margin-top: 20vh;
+    border-radius: 0.56vw;
+    box-shadow: 0 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
 }
 
 .hobbies-container h2 {
-    font-size: 72px;
+    font-size: 5vw;
     margin-top: 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.69vw;
+    border-bottom: 0.14vw solid #007bff;
 }
 
 .hobby-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.69vw;
 }
 
 .hobby-item p{
-    font-size: 36px;
+    font-size: 2.5vw;
     color: orange;
 }
 
 .hobby-icon {
-    width:100px; 
+    width:6.94vw; 
     height: auto;
-    margin-right: 10px;
+    margin-right: 0.69vw;
 }
 
 
 .hobby-item:hover {
-    transform: scale(3);
+    transform: scale(2);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -636,25 +690,439 @@ a:hover, a:focus {
 
 /************************************************************************************/
 
-
 footer {
     background-color: #202020;
     color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 2vw;
+    font-size: 0.9vw;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+.footer-content p {
+    font-size: 1.5vw;
+    margin: 0.5v 0; 
+
 }
 
-footer a:hover {
-    text-decoration: underline;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
 }
 
-.footer-content {
-    margin: auto;
-    width: 80%; 
+.social-icons a {
+    color: white;
+    margin: 0 1vw; 
+    font-size: 3vw; 
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+
+
+
+
+
+
+.burger-nav{
+    display: none;
+    width: 4vw; 
+    height: auto; 
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.burger-nav span {
+    display: block;
+    height: 0.28vh;
+    margin: 0.5vh 0; 
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/* Responsive design */ 
+
+
+/* media for a tablet */
+@media (max-width: 768px) {
+
+    .burger-nav {
+        display: block;
+    }
+    
+    .main-nav{
+        padding:0;
+    }
+
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .main-nav ul.active {
+        display: flex; 
+    }
+
+    .main-nav a:hover {
+        background-color: #440404;
+    }
+
+
+    
+    section{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 40vh;
+    }
+
+
+    div{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 10vh;
+
+    }
+
+    
+
+    .profile-photo{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 30%;
+    }
+
+    .name-title h1{
+        font-size: 6vw;
+    }
+
+    .name-title .title{
+        font-size: 4.5vw;
+    }
+
+
+    
+
+
+    .pro-container, .competences-container, .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pro-profile {
+        max-width: 90%; 
+    }
+    #typewriter {
+        max-width: 90%;
+    }
+
+    .typewriter_0 {
+        max-width: 90%;
+    }
+
+    .animated, #pro-cursus, .competence-item, .project-item, .language-item {
+        max-width: 90%;
+        margin: 0.2vw 0;
+        margin-bottom: 3vh;
+        margin-top: 8.48vh;
+    }
+
+    .isima-photo, .ipest-photo, .lycee-photo .data-photo {
+        width: 80vw;
+    }
+
+    .competence-item {
+        padding: 3.5vw;
+        font-size: 3vw;
+    }
+
+
+    
+    .formations h2, .competences h2, .projects-container h2, .languages-container h2 {
+        margin-bottom: 2vw;
+    }
+
+    .projects-container, .languages-container {
+        max-width: 90%; 
+        margin: 0 1vw;
+
+    }
+    
+
+    .project-item p {
+        font-size: 1.94vw;
+    }
+
+    .language-item {
+        font-size: 3vw;
+    }
+
+
+
+    .hobbies-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .hobby-icon {
+        width:10vw; 
+        height: auto;
+        margin-right: 0.69vw;
+    }
+    .hobby-item:hover {
+        transform: scale(1);
+    }
+
+    
+    footer {
+        background-color: #202020;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 2vw;
+        font-size: 0.9vw;
+    }
+    
+    .footer-content p {
+        font-size: 2vw;
+        margin: 0.5v 0; 
+    
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    .social-icons a {
+        color: white;
+        margin: 0 1vw; 
+        font-size: 4vw; 
+        transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+        color: #4CAF50;
+    }
+}
+
+
+
+
+/* media for a mobile */
+
+@media (max-width: 480px) {
+
+    
+    .burger-nav {
+        display: block;
+    }
+    
+    .main-nav{
+        padding:0;
+    }
+
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .main-nav ul.active {
+        display: flex; 
+    }
+
+    .main-nav a:hover {
+        background-color: #440404;
+    }
+
+
+
+
+    
+    section{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 40vh;
+    }
+
+
+    div{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 20vh;
+
+    }
+
+    
+
+    .profile-photo{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 35%;
+    }
+
+    .name-title h1{
+        font-size: 6vw;
+    }
+
+    .name-title .title{
+        font-size: 4.5vw;
+    }
+
+
+    #coords .hidden {
+        font-size: 3vw;
+    }
+
+    
+
+
+    .pro-container, .competences-container, .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pro-profile {
+        max-width: 90%; 
+    }
+    #typewriter {
+        max-width: 90%;
+        font-size: 4vw;
+    }
+
+    .typewriter_0 h5{
+        font-size: 5vw;
+    }
+    .typewriter_0 {
+        max-width: 100%;
+        font-size: 4vw;
+
+    }
+
+    .animated, #pro-cursus, .competence-item, .project-item, .language-item {
+        max-width: 90%;
+        margin: 0 0;
+        margin-bottom: 3vh;
+        margin-top: 8.48vh;
+    }
+
+    #coords h3, .pro-profile h4, .animated h4, #formations h2, #competences h2, #projects h2, #hobbies h2{
+        font-size: 7vw;
+    }
+
+    .isima-photo, .ipest-photo, .lycee-photo .data-photo {
+        width: 80vw;
+    }
+
+    .competence-item {
+        padding: 3.5vw;
+        font-size: 4vw;
+    }
+
+
+    
+    .formations h2, .competences h2, .projects-container h2, .languages-container h2 {
+        margin-bottom: 3vw;
+    }
+
+    .projects-container, .languages-container {
+        max-width: 90%; 
+        margin: 0 1vw;
+
+    }
+    
+
+    .project-item p {
+        font-size: 3vw;
+    }
+
+    .language-item {
+        font-size: 3vw;
+    }
+
+
+
+    .hobbies-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .hobby-icon {
+        width:10vw; 
+        height: auto;
+        margin-right: 0.69vw;
+    }
+    .hobby-item:hover {
+        transform: scale(1);
+    }
+
+    
+    footer {
+        background-color: #202020;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 2vw;
+        font-size: 0.9vw;
+    }
+    
+    .footer-content p {
+        font-size: 2vw;
+        margin: 0.5v 0; 
+    
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    .social-icons a {
+        color: white;
+        margin: 0 1vw; 
+        font-size: 4vw; 
+        transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+        color: #4CAF50;
+    }
 }
