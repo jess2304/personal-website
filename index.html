@@ -6,13 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>It's Jessem ! </title>
+    <title>It's Jessem Ettaghouti ! </title>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     
-    <script defer src="script.js"></script>
+
+    <script defer src="js_src/menu.js"></script>
+    <script defer src="js_src/menu_burger.js"></script>
+    <script defer src="js_src/intersection_observer.js"></script>
+    <script defer src="js_src/animated.js"></script>
+    <script defer src="js_src/subjects.js"></script>
+    <script defer src="js_src/typewriters.js"></script>
+
 
 
 </head>
@@ -21,12 +28,18 @@
 
         <header>
             <nav class="main-nav">
+                <a class="burger-nav">
+                    <span></span> 
+                    <span></span>
+                    <span></span>
+                </a>
                 <ul>
                     <li><a href="#coords">Coordonnées</a></li>
                     <li><a href="#pro-pro">Profil et Parcours Professionnels</a></li>
                     <li><a href="#formations">Formations</a></li>
                     <li><a href="#competences">Compétences</a></li>
                     <li><a href="#projects">Projets</a></li>
+                    <li><a href="#certifications">Certifications JCI</a></li>
                     <li><a href="#languages">Langues</a></li>
                     <li><a href="#hobbies">Loisirs</a></li>
                 </ul>
@@ -77,7 +90,7 @@
             </div>
 
             <!-- Professional Cursus -->   
-            <div class="animated">
+            <div class="animated" id="pro-cursus">
                 <h4>Parcours Professionnel</h4>
                 <div class="typewriter_0">
                     <h5>Data Scientist</h5>
@@ -156,9 +169,9 @@
                 </div>
             </div>
         </section>
-        
+
         <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <!-- Projects section -->
+        <!-- Projects section and languages -->
         <section class="main-container" id="projects">
             
             <div class="projects-container">
@@ -204,6 +217,18 @@
             </div>
         </section>
 
+        
+        <section id="certifications">
+            <h2>Certifications JCI</h2>
+            <ul class="certifications-list competences-container">
+                <li class="competence-item">Certification à la voie du succès - JCI - Formateur : Fida Talbi - 26 Août 2018</li>
+                <li class="competence-item">Certification en Planification d'une Action - JCI - Formateur : Mohamed Ali Boussarsar - 28 Avril 2019</li>
+                <li class="competence-item">Certification en Gestion de Temps - JCI - Formateur : Youssef Baccouch 03 Août 2019</li>
+                <li class="competence-item">Certification en Gestion de Stress - JCI - Formateur : Mohamed Hosni Sebha - 03 Août 2019</li>
+                <li class="competence-item">Summer Training Forum - JCI Soukra, JCI Tabarka, JCI Bousalem, JCI El Menzah - 17,18,19 Août 2019</li>
+            </ul>
+        </section>
+
         <section class="hobbies-container" id="hobbies">
             <h2>Loisirs</h2>
             <div class="hobby-item">
@@ -223,13 +248,27 @@
             <div class="footer-content">
                 <p>&copy; 2023 Jessem Ettaghouti. Tous droits réservés.</p>
                 <p>Contact : <a href="mailto:jessemtaghouti.prepa@gmail.com">jessemtaghouti.prepa@gmail.com</a></p>
+                
+                <!-- Social media -->
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jessem.ettaghouti.9/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jessem_ett/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@jessemettaghouti" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            
             </div>
 
             <a class="gotopbtn" href="#"> <i class = "fas fa-arrow-up"></i> </a>
         </footer>
         
         <!--------- ------------------------------------------------------------------------------------------------------>
-
+    </div>
 
 
 </body>

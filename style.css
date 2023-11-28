@@ -24,6 +24,7 @@ body{
 }
 
 
+
 .main-nav {
     background-color: #333;
     color: white;
@@ -49,7 +50,7 @@ body{
 .main-nav a {
     color: white;
     text-decoration: none;
-    padding: 0.69vw 1.04vw;
+    padding: 0.69vh 1.04vw;
     font-size: 1.39vw;
     font-weight: bold;
 }
@@ -66,8 +67,9 @@ section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 70vh;
+    min-height: 60vh;
 }
+
 
 div{
     display: grid;
@@ -165,7 +167,8 @@ a:hover, a:focus {
 .animated {
     opacity: 0;
     transition: opacity 3s ease-out, transform 1s ease-out;
-    margin-top: 4.17vw;
+    margin-top: 8.48vh;
+    margin-bottom: 0.02vh;
 }
 
 
@@ -216,6 +219,11 @@ a:hover, a:focus {
 .formations h2{
     text-align: center; 
     font-size: 5vw;
+}
+
+
+.formations{
+    margin-top: 20vh;
 }
 
 .formations .formations-container{
@@ -295,6 +303,7 @@ a:hover, a:focus {
     display: flex;
     justify-content: space-around;
     align-items: start;
+    margin-top: 20vh;
 }
 
 
@@ -467,6 +476,11 @@ a:hover, a:focus {
 
 /* The skills part*/
 
+.competences{
+    margin-top: 20vh;
+}
+
+
 .competences-container {
     display: flex;
     justify-content: space-around;
@@ -518,6 +532,12 @@ a:hover, a:focus {
 }
 
 
+.competence-item:nth-child(5).show {
+    transition-delay: 1.2s;
+    box-shadow: 0 0.69vw 1.39vw rgba(185, 33, 231, 0.5); 
+}
+
+
 
 /*****************************************************************************************/
 
@@ -528,11 +548,17 @@ a:hover, a:focus {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 1.39vw 0;
+    margin-top: 20vh;
+    align-items: flex-start;
+
+
 }
 
 .projects-container, .languages-container {
-    flex-basis: 45%; 
-    margin: 0.69vw;
+    flex: 1;
+    max-width: 48%; 
+    margin: 0 1vw;
+
 }
 
 .project-item {
@@ -601,13 +627,31 @@ a:hover, a:focus {
 }
 
 
+/******************************************************************/
+
+#certifications {
+    
+    padding: 1.39vw;
+    text-align: center;
+}
+
+#certifications h2{
+    font-size: 5vw;
+}
+
+.certifications-list {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;
+}
+
+
 
 /****************************************************************/
 
 
 .hobbies-container {
     padding: 1.39vw;
-    margin-top: 1.39vw;
+    margin-top: 20vh;
     border-radius: 0.56vw;
     box-shadow: 0 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
 }
@@ -638,7 +682,7 @@ a:hover, a:focus {
 
 
 .hobby-item:hover {
-    transform: scale(3);
+    transform: scale(2);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -646,30 +690,63 @@ a:hover, a:focus {
 
 /************************************************************************************/
 
-
 footer {
     background-color: #202020;
     color: white;
-    text-align: center;
-    padding: 1.04vw 0;
-    font-size: 0.97vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 2vw;
+    font-size: 0.9vw;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+.footer-content p {
+    font-size: 1.5vw;
+    margin: 0.5v 0; 
+
 }
 
-footer a:hover {
-    text-decoration: underline;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
 }
 
-.footer-content {
-    margin: auto;
-    width: 80%; 
+.social-icons a {
+    color: white;
+    margin: 0 1vw; 
+    font-size: 3vw; 
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
 }
 
 
+
+
+
+
+
+.burger-nav{
+    display: none;
+    width: 4vw; 
+    height: auto; 
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.burger-nav span {
+    display: block;
+    height: 0.28vh;
+    margin: 0.5vh 0; 
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
@@ -682,17 +759,48 @@ footer a:hover {
 /* media for a tablet */
 @media (max-width: 768px) {
 
-    .main-nav {
-        flex-direction: column;
+    .burger-nav {
+        display: block;
+    }
+    
+    .main-nav{
+        padding:0;
     }
 
-    .main-nav a{
-        font-size: 2vw;
-        padding: 1vw;
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .main-nav ul.active {
+        display: flex; 
     }
 
     .main-nav a:hover {
-        background-color: #666;
+        background-color: #440404;
+    }
+
+
+    
+    section{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 40vh;
+    }
+
+
+    div{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 10vh;
+
     }
 
     
@@ -700,6 +808,7 @@ footer a:hover {
     .profile-photo{
         width: 50vw;
         height: 50vw;
+        border-radius: 30%;
     }
 
     .name-title h1{
@@ -710,27 +819,54 @@ footer a:hover {
         font-size: 4.5vw;
     }
 
+
+    
+
+
     .pro-container, .competences-container, .main-container{
         flex-direction: column;
         align-items: center;
     }
+    
+    .pro-profile {
+        max-width: 90%; 
+    }
+    #typewriter {
+        max-width: 90%;
+    }
 
-    .pro-profile, .pro-container .animated, .competence-item, .project-item, .language-item {
-        max-width: 80vw;
-        margin: 1vw 0;
+    .typewriter_0 {
+        max-width: 90%;
+    }
+
+    .animated, #pro-cursus, .competence-item, .project-item, .language-item {
+        max-width: 90%;
+        margin: 0.2vw 0;
+        margin-bottom: 3vh;
+        margin-top: 8.48vh;
     }
 
     .isima-photo, .ipest-photo, .lycee-photo .data-photo {
         width: 80vw;
     }
 
+    .competence-item {
+        padding: 3.5vw;
+        font-size: 3vw;
+    }
+
 
     
     .formations h2, .competences h2, .projects-container h2, .languages-container h2 {
-        font-size: 4vw; 
         margin-bottom: 2vw;
     }
 
+    .projects-container, .languages-container {
+        max-width: 90%; 
+        margin: 0 1vw;
+
+    }
+    
 
     .project-item p {
         font-size: 1.94vw;
@@ -738,5 +874,255 @@ footer a:hover {
 
     .language-item {
         font-size: 3vw;
+    }
+
+
+
+    .hobbies-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .hobby-icon {
+        width:10vw; 
+        height: auto;
+        margin-right: 0.69vw;
+    }
+    .hobby-item:hover {
+        transform: scale(1);
+    }
+
+    
+    footer {
+        background-color: #202020;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 2vw;
+        font-size: 0.9vw;
+    }
+    
+    .footer-content p {
+        font-size: 2vw;
+        margin: 0.5v 0; 
+    
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    .social-icons a {
+        color: white;
+        margin: 0 1vw; 
+        font-size: 4vw; 
+        transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+        color: #4CAF50;
+    }
+}
+
+
+
+
+/* media for a mobile */
+
+@media (max-width: 480px) {
+
+    
+    .burger-nav {
+        display: block;
+    }
+    
+    .main-nav{
+        padding:0;
+    }
+
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .main-nav ul.active {
+        display: flex; 
+    }
+
+    .main-nav a:hover {
+        background-color: #440404;
+    }
+
+
+
+
+    
+    section{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 40vh;
+    }
+
+
+    div{
+        display: grid;
+        place-items: center;
+        align-content: center;
+        min-height: 20vh;
+
+    }
+
+    
+
+    .profile-photo{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 35%;
+    }
+
+    .name-title h1{
+        font-size: 6vw;
+    }
+
+    .name-title .title{
+        font-size: 4.5vw;
+    }
+
+
+    #coords .hidden {
+        font-size: 3vw;
+    }
+
+    
+
+
+    .pro-container, .competences-container, .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pro-profile {
+        max-width: 90%; 
+    }
+    #typewriter {
+        max-width: 90%;
+        font-size: 4vw;
+    }
+
+    .typewriter_0 h5{
+        font-size: 5vw;
+    }
+    .typewriter_0 {
+        max-width: 100%;
+        font-size: 4vw;
+
+    }
+
+    .animated, #pro-cursus, .competence-item, .project-item, .language-item {
+        max-width: 90%;
+        margin: 0 0;
+        margin-bottom: 3vh;
+        margin-top: 8.48vh;
+    }
+
+    #coords h3, .pro-profile h4, .animated h4, #formations h2, #competences h2, #projects h2, #hobbies h2{
+        font-size: 7vw;
+    }
+
+    .isima-photo, .ipest-photo, .lycee-photo .data-photo {
+        width: 80vw;
+    }
+
+    .competence-item {
+        padding: 3.5vw;
+        font-size: 4vw;
+    }
+
+
+    
+    .formations h2, .competences h2, .projects-container h2, .languages-container h2 {
+        margin-bottom: 3vw;
+    }
+
+    .projects-container, .languages-container {
+        max-width: 90%; 
+        margin: 0 1vw;
+
+    }
+    
+
+    .project-item p {
+        font-size: 3vw;
+    }
+
+    .language-item {
+        font-size: 3vw;
+    }
+
+
+
+    .hobbies-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .hobby-icon {
+        width:10vw; 
+        height: auto;
+        margin-right: 0.69vw;
+    }
+    .hobby-item:hover {
+        transform: scale(1);
+    }
+
+    
+    footer {
+        background-color: #202020;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 2vw;
+        font-size: 0.9vw;
+    }
+    
+    .footer-content p {
+        font-size: 2vw;
+        margin: 0.5v 0; 
+    
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    .social-icons a {
+        color: white;
+        margin: 0 1vw; 
+        font-size: 4vw; 
+        transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+        color: #4CAF50;
     }
 }
